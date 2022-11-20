@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 98vw;
+}
+h3, h4, h1, h2, a{
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+    color: rgb(9, 213, 116);
+    font-weight: 600;
+}
+p{
+    font-family: ubuntu;
+}
+
+/***************************************************
+        FIRST-ROW STARTS
+***************************************************/
+.first_row{
+    background: url(../img/course-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.first_row > div{
+    padding: 15px 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
+}
+.first_row .note_pad{
+    width: 70%;
+}
+.note_pad h3{
+    font-family: poppins;
+}
+.note_pad h3::first-line{
+    color: rgb(9, 213, 116);
+    font-size: 30px;
+}
+.note_pad p{
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.first_row .note_pad .btn{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    border: 2px solid rgb(9, 213, 116);
+    border-radius: 1.5rem;
+    font-family: sans-serif;
+    /* font-weight: 600; */
+}
+.illustration{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.illustration .entry{
+    display: flex;
+}
+.illustration .entry .entry-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+.illustration .entry .entry-img img{
+    /* border: 2px solid rgb(9, 213, 116); */
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/***************************************************
+        FIRST-ROW ENDS
+***************************************************/
+
+.courses-row{
+    background: #f6f6f6;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.courses-row .course-note{
+    text-align: center;
+}
+.courses{
+    display: flex;
+    width: 350px;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.courses-row .course-single{
+    margin: 20px 5px;
+    background: #fff;
+    border-radius: .25rem;
+    width: 205px;
+    height: 380px;
+    padding: 25px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .4);
+}
+.courses-row .course-single .course-img{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.courses-row .course-single .course-img img{
+    height: auto;
+    width: 150px;
+    
+}
+.courses-row .course-single:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: ease-out 3s;
+}
+.courses-row .course-single .course-text{
+    text-align: center;
+}
+/***************************************************
+        COURSES-ROW ENDS
+***************************************************/
+.additional-row{
+    width: fit-content;
+    background: #fff;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.additional-row > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    left: 5rem;
+}
+.additional-row .ad-images > div{
+    width: min-content;
+    display: grid;
+    grid-template-columns:;
+    position: relative;
+    left: 6rem;
+}
+.additional-row .ad-images .ad-one{
+    display: flex;
+}
+.additional-row .ad-images .ad-two{
+    display: flex;
+}
+.ad-images .ad-single{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .4);
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+}
+.ad-single h4{
+    font-size: 12px;
+}
+.ad-images .ad-single img{
+    height: auto;
+    width: 80px;
+}
+.additional-row .ad-single:nth-child(1){
+    cursor: pointer;
+    transform: scale(1.2);
+    border-top: 5px solid rgb(9, 213, 116);
+    border-top-left-radius: 2rem;
+    /* transition: ease-out 3s; */
+}
+.ad-single:nth-child(2){}
+.ad-single:nth-child(3){
+    z-index: 10;
+    border-bottom-left-radius: .5rem;
+    border-right: .8rem solid rgb(9, 213, 116); 
+}
+.additional-row .ad-single:nth-child(4){
+    background: rgb(9, 213, 116);
+    color: #fff;
+    position: relative;
+    left: -20px;
+    top: -15px; 
+    z-index: 1;
+    border-bottom: 5px solid #fff;
+    border-bottom-right-radius: 2rem;
+}
+.additional-row > div .ad-text{
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4rem;
+}
+.ad-text h3{
+    margin-bottom: 1rem;
+}
+.ad-text ul{
+    margin-top: 1rem;
+}
+.ad-text ul li{
+    list-style-type: circle;
+    margin: .5rem;
+    font-family: ubuntu;
+    font-weight: 600;
+}
+
+.additional-row > div .ad-text > div .btn{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 130px;
+    border: 2px solid rgb(9, 213, 116);
+    border-radius: 1.5rem;
+    font-family: sans-serif;
+}
+/***************************************************
+        ADDITIONAL-ROW ENDS
+***************************************************/
+
+
+/***************************************************
+        REGISTRATION-ROW ENDS
+***************************************************/
+footer{}
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+/***************************************************
+        FOOTER-ENDS
+***************************************************/
